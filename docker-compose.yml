@@ -1,0 +1,21 @@
+mysql:
+  build: mysql/
+  ports:
+    - "3306:3306"
+  volumes:
+    - .:/app
+
+redis:
+  build: redis/
+  ports:
+    - "6379:6379"
+  volumes:
+    - .:/app
+
+postfix:
+  build: postfix/
+  ports:
+    - "25:8025"
+  volumes:
+    - .:/app
+
