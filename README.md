@@ -55,20 +55,21 @@ d72f97fac9ba        composetest_postfix:latest   "sh -c 'service rsys   8 second
 - show host ip address
 
 ```
-% boot2docker ssh ip addr show eth1
-4: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
-  link/ether 08:00:27:d2:45:2d brd ff:ff:ff:ff:ff:ff
-  inet 192.168.59.104/24 brd 192.168.59.255 scope global eth1
-  valid_lft forever preferred_lft forever
-  inet6 fe80::a00:27ff:fed2:452d/64 scope link
+% boot2docker ip
+192.168.59.104
 ```
 
 
 Halt
----
+===
 
 
 ```
 % boot2docker halt
 ```
 
+
+Issues
+===
+- Map containers' port into host OS.
+  - https://github.com/boot2docker/boot2docker-cli#configuration
