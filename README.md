@@ -15,7 +15,7 @@ Initial setup
 
 - install docker, docker compose  and boot2docker
 ```
-% brew install boo2docker docker docker-compose
+% brew install boot2docker docker docker-compose
 ```
 
 
