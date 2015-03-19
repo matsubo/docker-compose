@@ -26,7 +26,7 @@ Start
 - start host vm and set environment variables.
 ```
 % boot2docker up
-% `boot2docker shellinit`
+% $(boot2docker shellinit)
 ```
 
 - start containers
@@ -68,8 +68,3 @@ Halt
 % boot2docker halt
 ```
 
-
-Issues
-===
-- Map containers' port into host OS.
-  - https://github.com/boot2docker/boot2docker-cli#configuration
