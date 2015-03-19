@@ -57,7 +57,10 @@ d72f97fac9ba        composetest_postfix:latest   "sh -c 'service rsys   8 second
 ```
 % boot2docker ip
 192.168.59.104
+% mysql -u docker --password=docker -h `boot2docker ip`
 ```
+
+
 
 
 Halt
@@ -65,6 +68,10 @@ Halt
 
 
 ```
+% docker-compose stop
 % boot2docker halt
 ```
 
+Issues
+===
+- 8025 does not listen.
